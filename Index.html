@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/Estilo.css">
+</head>
+<body>
+    <div id="calculadora">
+        <input type="text" id="pantalla" disabled>
+        <div id="botones">
+            <button class="boton" onclick="agregarNumero('1')">1</button>
+            <button class="boton" onclick="agregarNumero('2')">2</button>
+            <button class="boton" onclick="agregarNumero('3')">3</button>
+            <button class="boton" onclick="agregarOperacion('+')">+</button>
+            <button class="boton" onclick="agregarNumero('4')">4</button>
+            <button class="boton" onclick="agregarNumero('5')">5</button>
+            <button class="boton" onclick="agregarNumero('6')">6</button>
+            <button class="boton" onclick="agregarOperacion('-')">-</button>
+            <button class="boton" onclick="agregarNumero('7')">7</button>
+            <button class="boton" onclick="agregarNumero('8')">8</button>
+            <button class="boton" onclick="agregarNumero('9')">9</button>
+            <button class="boton" onclick="agregarOperacion('*')">*</button>
+            <button class="boton" onclick="agregarNumero('0')">0</button>
+            <button class="boton" onclick="borrar()">C</button>
+            <button class="boton" onclick="calcular()">=</button>
+            <button class="boton" onclick="agregarOperacion('/')">/</button>
+        </div>
+    </div>
+    <div id="historial">
+        <h2>Historial</h2>
+        <ul id="lista-historial"></ul>
+        <button onclick="borrarHistorial()">Borrar Historial</button>
+    </div>
+    <script src="JS/Logica.js"></script>
+</body>
+</html>
